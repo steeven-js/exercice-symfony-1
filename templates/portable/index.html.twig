@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello PortableController!{% endblock %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="font-weight-bold mb-4">Ajouter un ordinateur portable</h2>
+                        {{ form_start(form) }}
+                            <div class="row">
+                                <div class="col-md-6">{{form_row(form.name)}}</div>
+                                <div class="col-md-6">{{form_row(form.price)}}</div>
+                                <div class="col-md-6">{{form_row(form.marque)}}</div>
+                                <div class="col-md-6">{{form_row(form.modele)}}</div>
+                                <div class="col-md-6">{{form_row(form.os)}}</div>
+                                <div class="col-md-6">{{form_row(form.pocesseur)}}</div>
+                                <div class="col-md-6">{{form_row(form.memoire)}}</div>
+                                <div class="col-md-6">{{form_row(form.graphisme)}}</div>
+                                <div class="col-md-6">{{form_row(form.affichage)}}</div>
+                                <div class="col-md-6">{{form_row(form.stockage)}}</div>
+                                <div class="col-md-6">{{form_row(form.communication)}}</div>
+                                <div class="col-md-6">{{form_row(form.equipement)}}</div>
+                                <div class="col-md-6">{{form_row(form.connectique)}}</div>
+                                <div class="col-md-6">{{form_row(form.couleur)}}</div>
+                                <div class="col-md-6">{{form_row(form.dimension)}}</div>
+                                <div class="col-md-6">{{form_row(form.poid)}}</div>
+                            </div>
+                        {{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

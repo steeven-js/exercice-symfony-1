@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MesPortablesController!{% endblock %}
+
+{% block content %}
+    <section class="section">
+        <div class="container">
+            <div class="row m-1 justify-content-between">
+                {% for portable in portables %}
+                    {# <pre>
+                        {{ dump(portables) }}
+                    </pre> #}
+                    <div class="card col-lg-3 col-md-4 col-sm-6 mb-4 " style="max-width: 20rem;">
+                        <div class="card-header">Portable n° {{portable.id}}</div>
+                        <div class="card-body">
+                            <h4 class="card-title">{{portable.marque}}</h4>
+                            <p class="card-text">Type: {{portable.name}}</p>
+                            <p class="card-text">Prix: {{portable.price}} €</p>
+                        </div>
+                            <a href="#" class="btn btn-primary mb-1">Découvrir</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}
